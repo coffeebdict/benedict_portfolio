@@ -204,7 +204,7 @@
     height: 3rem;
     border-radius: 0.5rem;
     border: 2px solid transparent;
-    color: #38220f;
+    color: #634832;
     transition: all 0.3s ease-out;
   }
 
@@ -239,6 +239,43 @@
     .section-title {
       font-size: 2.25rem;
     }
+  }
+
+  /* Section title gradient borders */
+  .section-title-experience {
+    background: linear-gradient(to right, #000000, #634832);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #000000, #634832) 1;
+  }
+
+  .section-title-about {
+    background: linear-gradient(to right, #000000, #967259);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #000000, #967259) 1;
+  }
+
+  .section-title-resume {
+    background: linear-gradient(to right, #000000, #634832);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #000000, #634832) 1;
+  }
+
+  .section-title-contact {
+    background: linear-gradient(to right, #000000, #967259);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #000000, #967259) 1;
   }
 
   .experience-card {

@@ -96,7 +96,7 @@ export default function Home() {
         <section
           id="home"
           className="relative h-screen flex items-center justify-start px-8 md:px-16 overflow-hidden"
-          style={{
+          style={{  
             background: 'linear-gradient(135deg, #ece0d1 0%, #dbc1ac 50%, #c9b5a0 100%)',
           }}
         >
@@ -148,7 +148,7 @@ export default function Home() {
 
         {/* Experience Section */}
         <section id="experience" className="py-24 px-8 md:px-16 max-w-4xl">
-          <h2 className="section-title">Experience</h2>
+          <h2 className="section-title section-title-experience">Experience</h2>
           
           <div className="space-y-8">
             {/* Experience Card 1 */}
@@ -230,7 +230,7 @@ export default function Home() {
 
         {/* About Section */}
         <section id="about" className="py-24 px-8 md:px-16 max-w-4xl">
-          <h2 className="section-title">About Me</h2>
+          <h2 className="section-title section-title-about">About Me</h2>
           
           <div className="glass-effect p-8 md:p-12 mb-12">
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
@@ -258,7 +258,7 @@ export default function Home() {
 
         {/* Resume Section */}
         <section id="resume" className="py-24 px-8 md:px-16 max-w-4xl">
-          <h2 className="section-title">Resume</h2>
+          <h2 className="section-title section-title-resume">Resume</h2>
           
           <div className="glass-effect p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
             <div>
@@ -286,7 +286,7 @@ export default function Home() {
 
         {/* Contact Section */}
         <section id="contact" className="py-24 px-8 md:px-16 max-w-4xl">
-          <h2 className="section-title">Get In Touch</h2>
+          <h2 className="section-title section-title-contact">Get In Touch</h2>
           
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Info */}
@@ -303,7 +303,7 @@ export default function Home() {
                   className="flex items-center gap-3 text-gray-300 hover:text-cyan-400 transition-colors duration-300"
                 >
                   <Mail size={20} />
-                  <span>hello@benedictabellana.dev</span>
+                  <span>abellanabenedict@gmail.com</span>
                 </a>
                 <a
                   href="https://github.com"
@@ -312,7 +312,7 @@ export default function Home() {
                   className="flex items-center gap-3 text-gray-300 hover:text-cyan-400 transition-colors duration-300"
                 >
                   <Github size={20} />
-                  <span>github.com/benedictabellana</span>
+                  <span>https://github.com/coffeebdict</span>
                 </a>
                 <a
                   href="https://linkedin.com"
@@ -321,7 +321,7 @@ export default function Home() {
                   className="flex items-center gap-3 text-gray-300 hover:text-cyan-400 transition-colors duration-300"
                 >
                   <Linkedin size={20} />
-                  <span>linkedin.com/in/benedictabellana</span>
+                  <span>https://www.linkedin.com/in/benedict-abellana-b277571b2/</span>
                 </a>
               </div>
             </div>
