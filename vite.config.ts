@@ -151,9 +151,10 @@ function vitePluginManusDebugCollector(): Plugin {
 }
 
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector()];
+const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
 
 export default defineConfig({
-  base: '/benedict_portfolio/',
+  base: isGitHubPages ? "/benedict_portfolio/" : "/",
   plugins,
   resolve: {
     alias: {
