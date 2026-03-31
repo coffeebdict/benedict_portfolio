@@ -91,7 +91,7 @@ export default function Home() {
       </nav>
 
       {/* Main Content */}
-      <main className="ml-20 min-h-screen">
+      <main className="ml-20 min-h-screen bg-[#38220f]">
         {/* Hero Section */}
         <section
           id="home"
