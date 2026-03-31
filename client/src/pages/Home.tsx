@@ -276,12 +276,13 @@ export default function Home() {
               </a>
             </div>
             
-            {/* Resume Preview Placeholder */}
-            <div className="w-full md:w-64 h-80 bg-gradient-to-br from-slate-900 to-black border border-white/10 rounded-lg flex items-center justify-center">
-              <div className="text-center">
-                <FileText size={48} className="mx-auto mb-4 text-cyan-400" />
-                <p className="text-gray-400 text-sm">Resume Preview</p>
-              </div>
+            {/* Resume PDF Preview */}
+            <div className="w-full md:w-72 h-80 overflow-hidden rounded-lg border border-white/10 bg-white shadow-lg">
+              <iframe
+                src="/Benedict_Resume.pdf#toolbar=0&navpanes=0&scrollbar=0&view=FitH"
+                title="Benedict Resume Preview"
+                className="h-full w-full"
+              />
             </div>
           </div>
         </section>
