@@ -24,14 +24,18 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '22'
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: |
+          cd client
+          npm install --legacy-peer-deps
 
       - name: Build
-        run: npm run build
+        run: |
+          cd client
+          npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -39,7 +43,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist/public'
+          path: './client/dist'
 
   deploy:
     environment:
