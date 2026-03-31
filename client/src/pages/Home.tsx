@@ -97,24 +97,22 @@ export default function Home() {
           id="home"
           className="relative h-screen flex items-center justify-start px-8 md:px-16 overflow-hidden"
           style={{
-            backgroundImage: 'url(https://d2xsxph8kpxj0f.cloudfront.net/310519663491323313/GcCZMDkUuFMSZEyE576PqV/hero-coffee-noir-DaZ4t9qnNykonvoz73CMYL.webp)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            background: 'linear-gradient(135deg, #ece0d1 0%, #dbc1ac 50%, #c9b5a0 100%)',
           }}
         >
-          {/* Overlay for text readability */}
-          <div className="absolute inset-0 bg-black/60" />
+          {/* Subtle overlay for depth */}
+          <div className="absolute inset-0 opacity-40" style={{ background: 'radial-gradient(circle at top right, rgba(99, 72, 50, 0.1), transparent)' }} />
           
           {/* Hero Content */}
           <div className="relative z-10 max-w-2xl">
             <h1 className="hero-text text-6xl md:text-7xl lg:text-8xl mb-6 leading-tight">
               Hey, I'm<br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-900 to-orange-700">
                 Benedict Abellana
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-gray-300 font-mono mb-8 font-light">
+            <p className="text-xl md:text-2xl font-mono mb-8 font-light" style={{ color: '#634832' }}>
               Front-End Developer who loves Coffee
             </p>
             

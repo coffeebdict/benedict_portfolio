@@ -43,77 +43,78 @@
 }
 
 :root {
-  /* Coffee Noir Aesthetic - Dark Theme */
-  --primary: #1243ae;
-  --primary-foreground: #f5f5f5;
-  --sidebar-primary: #1243ae;
-  --sidebar-primary-foreground: #f5f5f5;
-  --chart-1: #38b6ff;
-  --chart-2: #1243ae;
-  --chart-3: #6F4E37;
-  --chart-4: #0a0a0a;
-  --chart-5: #1a1a1a;
+  /* Warm Coffee Palette */
+  --primary: #634832;
+  --primary-foreground: #ece0d1;
+  --sidebar-primary: #634832;
+  --sidebar-primary-foreground: #ece0d1;
+  --chart-1: #967259;
+  --chart-2: #634832;
+  --chart-3: #dbc1ac;
+  --chart-4: #38220f;
+  --chart-5: #634832;
   --radius: 0.65rem;
   
-  /* Deep coffee noir background */
-  --background: #000000;
-  --foreground: #f5f5f5;
-  --card: #0a0a0a;
-  --card-foreground: #f5f5f5;
-  --popover: #1a1a1a;
-  --popover-foreground: #f5f5f5;
-  --secondary: #1a1a1a;
-  --secondary-foreground: #e0e0e0;
-  --muted: #2a2a2a;
-  --muted-foreground: #a0a0a0;
-  --accent: #38b6ff;
-  --accent-foreground: #000000;
-  --destructive: #ef4444;
-  --destructive-foreground: #f5f5f5;
-  --border: #2a2a2a;
-  --input: #1a1a1a;
-  --ring: #38b6ff;
-  --sidebar: #0a0a0a;
-  --sidebar-foreground: #f5f5f5;
-  --sidebar-accent: #1243ae;
-  --sidebar-accent-foreground: #f5f5f5;
-  --sidebar-border: #2a2a2a;
-  --sidebar-ring: #38b6ff;
+  /* Warm coffee background palette */
+  --background: #ece0d1;
+  --foreground: #38220f;
+  --card: #dbc1ac;
+  --card-foreground: #38220f;
+  --popover: #dbc1ac;
+  --popover-foreground: #38220f;
+  --secondary: #c9b5a0;
+  --secondary-foreground: #634832;
+  --muted: #b8a896;
+  --muted-foreground: #634832;
+  --accent: #967259;
+  --accent-foreground: #ece0d1;
+  --destructive: #d84a3a;
+  --destructive-foreground: #ece0d1;
+  --border: #c9b5a0;
+  --input: #dbc1ac;
+  --ring: #967259;
+  --sidebar: #dbc1ac;
+  --sidebar-foreground: #38220f;
+  --sidebar-accent: #967259;
+  --sidebar-accent-foreground: #ece0d1;
+  --sidebar-border: #c9b5a0;
+  --sidebar-ring: #967259;
 }
 
 .dark {
-  --primary: #1243ae;
-  --primary-foreground: #f5f5f5;
-  --sidebar-primary: #1243ae;
-  --sidebar-primary-foreground: #f5f5f5;
-  --background: #000000;
-  --foreground: #f5f5f5;
-  --card: #0a0a0a;
-  --card-foreground: #f5f5f5;
-  --popover: #1a1a1a;
-  --popover-foreground: #f5f5f5;
-  --secondary: #1a1a1a;
-  --secondary-foreground: #e0e0e0;
-  --muted: #2a2a2a;
-  --muted-foreground: #a0a0a0;
-  --accent: #38b6ff;
-  --accent-foreground: #000000;
-  --destructive: #ef4444;
-  --destructive-foreground: #f5f5f5;
-  --border: #2a2a2a;
-  --input: #1a1a1a;
-  --ring: #38b6ff;
-  --chart-1: #38b6ff;
-  --chart-2: #1243ae;
-  --chart-3: #6F4E37;
-  --chart-4: #0a0a0a;
-  --chart-5: #1a1a1a;
-  --sidebar: #0a0a0a;
-  --sidebar-foreground: #f5f5f5;
-  --sidebar-accent: #1243ae;
-  --sidebar-accent-foreground: #f5f5f5;
-  --sidebar-border: #2a2a2a;
-  --sidebar-ring: #38b6ff;
+  /* Warm Coffee Palette - Dark variant */
+  --primary: #634832;
+  --primary-foreground: #ece0d1;
+  --sidebar-primary: #634832;
+  --sidebar-primary-foreground: #ece0d1;
+  --background: #ece0d1;
+  --foreground: #38220f;
+  --card: #dbc1ac;
+  --card-foreground: #38220f;
+  --popover: #dbc1ac;
+  --popover-foreground: #38220f;
+  --secondary: #c9b5a0;
+  --secondary-foreground: #634832;
+  --muted: #b8a896;
+  --muted-foreground: #634832;
+  --accent: #967259;
+  --accent-foreground: #ece0d1;
+  --destructive: #d84a3a;
+  --destructive-foreground: #ece0d1;
+  --border: #c9b5a0;
+  --input: #dbc1ac;
+  --ring: #967259;
+  --chart-1: #967259;
+  --chart-2: #634832;
+  --chart-3: #dbc1ac;
+  --chart-4: #38220f;
+  --chart-5: #634832;
+  --sidebar: #dbc1ac;
+  --sidebar-foreground: #38220f;
+  --sidebar-accent: #967259;
+  --sidebar-accent-foreground: #ece0d1;
+  --sidebar-border: #c9b5a0;
+  --sidebar-ring: #967259;
 }
 
 @layer base {
@@ -168,11 +169,11 @@
     }
   }
 
-  /* Coffee Noir Design System */
+  /* Warm Coffee Design System */
   .glass-effect {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(219, 193, 172, 0.6);
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(99, 72, 50, 0.2);
     border-radius: 0.75rem;
   }
 
@@ -184,15 +185,15 @@
     width: 4rem;
     height: 4rem;
     border-radius: 0.5rem;
-    background: linear-gradient(to bottom right, #1e293b, #000000);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: linear-gradient(to bottom right, #dbc1ac, #c9b5a0);
+    border: 2px solid #967259;
     transition: all 0.3s ease-out;
   }
 
   .tech-badge:hover {
-    border-color: rgba(56, 182, 255, 0.5);
+    border-color: #634832;
     transform: scale(1.1);
-    box-shadow: 0 0 20px rgba(56, 182, 255, 0.3), inset 0 0 20px rgba(56, 182, 255, 0.1);
+    box-shadow: 0 0 20px rgba(150, 114, 89, 0.4), inset 0 0 20px rgba(150, 114, 89, 0.15);
   }
 
   .nav-icon-btn {
@@ -202,24 +203,25 @@
     width: 3rem;
     height: 3rem;
     border-radius: 0.5rem;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
+    color: #38220f;
     transition: all 0.3s ease-out;
   }
 
   .nav-icon-btn:hover {
-    background-color: rgba(30, 41, 59, 0.5);
-    border-color: rgba(56, 182, 255, 0.5);
+    background-color: rgba(219, 193, 172, 0.8);
+    border-color: #967259;
   }
 
   .nav-icon-btn.active {
-    background-color: rgba(30, 41, 59, 0.8);
-    border-color: rgba(56, 182, 255, 0.5);
-    color: #38b6ff;
-    box-shadow: 0 0 15px rgba(56, 182, 255, 0.2), inset 0 0 15px rgba(56, 182, 255, 0.05);
+    background-color: #c9b5a0;
+    border-color: #634832;
+    color: #38220f;
+    box-shadow: 0 0 15px rgba(150, 114, 89, 0.3), inset 0 0 15px rgba(150, 114, 89, 0.1);
   }
 
   .hero-text {
-    color: white;
+    color: #38220f;
     font-weight: bold;
     letter-spacing: -0.02em;
     font-family: 'Space Grotesk', 'IBM Plex Mono', monospace;
@@ -228,7 +230,7 @@
   .section-title {
     font-size: 1.875rem;
     font-weight: bold;
-    color: white;
+    color: #38220f;
     margin-bottom: 3rem;
     font-family: 'Space Grotesk', 'IBM Plex Mono', monospace;
   }
@@ -240,11 +242,11 @@
   }
 
   .experience-card {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(219, 193, 172, 0.6);
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(99, 72, 50, 0.2);
     border-radius: 0.75rem;
-    border-left: 4px solid rgba(56, 182, 255, 0.5);
+    border-left: 4px solid #967259;
     padding: 1.5rem;
     transition: all 0.3s ease-out;
   }
@@ -256,46 +258,47 @@
   }
 
   .experience-card:hover {
-    border-left-color: #38b6ff;
-    box-shadow: 0 0 20px rgba(56, 182, 255, 0.1), -4px 0 20px rgba(56, 182, 255, 0.15);
+    border-left-color: #634832;
+    box-shadow: 0 0 20px rgba(150, 114, 89, 0.2), -4px 0 20px rgba(99, 72, 50, 0.15);
+    background-color: rgba(219, 193, 172, 0.8);
   }
 
   .skill-tag {
     display: inline-block;
     padding: 0.5rem 1rem;
     border-radius: 9999px;
-    background-color: rgba(15, 23, 42, 0.6);
-    border: 1px solid rgba(56, 182, 255, 0.3);
-    color: #38b6ff;
+    background-color: rgba(201, 181, 160, 0.7);
+    border: 1px solid #967259;
+    color: #38220f;
     font-size: 0.875rem;
     font-weight: 500;
     transition: all 0.3s ease-out;
   }
 
   .skill-tag:hover {
-    background-color: rgba(30, 41, 59, 0.8);
-    border-color: rgba(56, 182, 255, 0.6);
-    box-shadow: 0 0 12px rgba(56, 182, 255, 0.2);
+    background-color: rgba(184, 168, 150, 0.9);
+    border-color: #634832;
+    box-shadow: 0 0 12px rgba(150, 114, 89, 0.3);
   }
 
   .contact-input {
     width: 100%;
     padding: 0.75rem 1rem;
     border-radius: 0.5rem;
-    background-color: rgba(15, 23, 42, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: white;
+    background-color: rgba(236, 224, 209, 0.9);
+    border: 2px solid #c9b5a0;
+    color: #38220f;
     transition: all 0.3s ease-out;
   }
 
   .contact-input:focus {
-    border-color: rgba(56, 182, 255, 0.5);
+    border-color: #967259;
     outline: none;
-    box-shadow: 0 0 0 1px rgba(56, 182, 255, 0.3);
+    box-shadow: 0 0 0 2px rgba(150, 114, 89, 0.2);
   }
 
   .contact-input::placeholder {
-    color: #4b5563;
+    color: #967259;
   }
 
   .submit-btn {
@@ -303,15 +306,15 @@
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
     font-weight: 600;
-    color: white;
-    background: linear-gradient(135deg, #1243ae 0%, #38b6ff 100%);
+    color: #ece0d1;
+    background: linear-gradient(135deg, #634832 0%, #967259 100%);
     border: none;
     transition: all 0.3s ease-out;
     cursor: pointer;
   }
 
   .submit-btn:hover {
-    box-shadow: 0 0 25px rgba(18, 67, 174, 0.4), 0 0 15px rgba(56, 182, 255, 0.3);
+    box-shadow: 0 0 25px rgba(99, 72, 50, 0.4), 0 0 15px rgba(150, 114, 89, 0.3);
     transform: translateY(-2px);
   }
 
@@ -336,14 +339,14 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: #000000;
+  background: #ece0d1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1243ae;
+  background: #967259;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #38b6ff;
+  background: #634832;
 }
