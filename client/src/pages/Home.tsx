@@ -139,7 +139,7 @@ export default function Home() {
             {/* CTA Button */}
             <Button
               onClick={() => scrollToSection('contact')}
-              className="px-8 py-3 rounded-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-cyan-500 hover:shadow-lg hover:shadow-cyan-400/30 transition-all duration-300"
+              className="submit-btn w-auto px-8 py-3 inline-flex items-center justify-center"
             >
               Get In Touch
             </Button>
@@ -156,9 +156,9 @@ export default function Home() {
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-1">Senior Frontend Developer</h3>
-                  <p className="text-cyan-400 font-semibold">Tech Innovations Inc.</p>
+                  <p className="font-semibold" style={{ color: '#38220f' }}>Tech Innovations Inc.</p>
                 </div>
-                <p className="text-gray-400 text-sm md:text-right mt-2 md:mt-0">2022 - Present</p>
+                <p className="text-sm md:text-right mt-2 md:mt-0 text-white">2022 - Present</p>
               </div>
               <ul className="space-y-2 text-gray-300 text-sm md:text-base">
                 <li className="flex items-start gap-3">
@@ -166,11 +166,11 @@ export default function Home() {
                   <span>Led development of responsive web applications using React and TypeScript</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-cyan-400 mt-1">▸</span>
+                  <span className="mt-1" style={{ color: '#38220f' }}>▸</span>
                   <span>Implemented glassmorphism design patterns and modern UI/UX best practices</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-cyan-400 mt-1">▸</span>
+                  <span className="mt-1" style={{ color: '#38220f' }}>▸</span>
                   <span>Optimized performance achieving 95+ Lighthouse scores</span>
                 </li>
               </ul>
@@ -181,21 +181,21 @@ export default function Home() {
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-1">Frontend Developer</h3>
-                  <p className="text-cyan-400 font-semibold">Digital Solutions Co.</p>
+                  <p className="font-semibold" style={{ color: '#38220f' }}>Digital Solutions Co.</p>
                 </div>
-                <p className="text-gray-400 text-sm md:text-right mt-2 md:mt-0">2020 - 2022</p>
+                <p className="text-sm md:text-right mt-2 md:mt-0 text-white">2020 - 2022</p>
               </div>
               <ul className="space-y-2 text-gray-300 text-sm md:text-base">
                 <li className="flex items-start gap-3">
-                  <span className="text-cyan-400 mt-1">▸</span>
+                  <span className="mt-1" style={{ color: '#38220f' }}>▸</span>
                   <span>Built interactive dashboards and data visualization components</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-cyan-400 mt-1">▸</span>
+                  <span className="mt-1" style={{ color: '#38220f' }}>▸</span>
                   <span>Collaborated with UX/UI designers to implement pixel-perfect designs</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-cyan-400 mt-1">▸</span>
+                  <span className="mt-1" style={{ color: '#38220f' }}>▸</span>
                   <span>Mentored junior developers and established coding standards</span>
                 </li>
               </ul>
@@ -206,21 +206,21 @@ export default function Home() {
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-1">Junior Frontend Developer</h3>
-                  <p className="text-cyan-400 font-semibold">StartUp Ventures</p>
+                  <p className="font-semibold" style={{ color: '#38220f' }}>StartUp Ventures</p>
                 </div>
-                <p className="text-gray-400 text-sm md:text-right mt-2 md:mt-0">2019 - 2020</p>
+                <p className="text-sm md:text-right mt-2 md:mt-0 text-white">2019 - 2020</p>
               </div>
               <ul className="space-y-2 text-gray-300 text-sm md:text-base">
                 <li className="flex items-start gap-3">
-                  <span className="text-cyan-400 mt-1">▸</span>
+                  <span className="mt-1" style={{ color: '#38220f' }}>▸</span>
                   <span>Developed responsive web pages using HTML, CSS, and vanilla JavaScript</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-cyan-400 mt-1">▸</span>
+                  <span className="mt-1" style={{ color: '#38220f' }}>▸</span>
                   <span>Implemented bug fixes and performance improvements</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-cyan-400 mt-1">▸</span>
+                  <span className="mt-1" style={{ color: '#38220f' }}>▸</span>
                   <span>Participated in code reviews and learned best practices</span>
                 </li>
               </ul>
@@ -267,7 +267,7 @@ export default function Home() {
                 Download my full resume to see a comprehensive overview of my experience, education, and technical skills.
               </p>
               <Button
-                className="flex items-center gap-2 px-6 py-3 rounded-lg font-semibold text-white bg-gradient-to-r from-blue-600 to-cyan-500 hover:shadow-lg hover:shadow-cyan-400/30 transition-all duration-300"
+                className="submit-btn w-auto flex items-center gap-2 px-6 py-3"
               >
                 <Download size={18} />
                 Download Resume
