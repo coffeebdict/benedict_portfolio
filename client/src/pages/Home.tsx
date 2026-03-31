@@ -266,12 +266,14 @@ export default function Home() {
               <p className="text-gray-300 mb-6">
                 Download my full resume to see a comprehensive overview of my experience, education, and technical skills.
               </p>
-              <Button
-                className="submit-btn w-auto flex items-center gap-2 px-6 py-3"
+              <a
+                href="/Benedict_Resume.pdf"
+                download="Benedict_Abellana_Resume.pdf"
+                className="submit-btn w-auto inline-flex items-center gap-2 px-6 py-3"
               >
                 <Download size={18} />
                 Download Resume
-              </Button>
+              </a>
             </div>
             
             {/* Resume Preview Placeholder */}
