@@ -204,19 +204,20 @@
     height: 3rem;
     border-radius: 0.5rem;
     border: 2px solid transparent;
-    color: #634832;
+    color: #dbc1ac;
     transition: all 0.3s ease-out;
   }
 
   .nav-icon-btn:hover {
-    background-color: rgba(219, 193, 172, 0.8);
+    background-color: rgba(236, 224, 209, 0.12);
     border-color: #967259;
+    color: #f7efe7;
   }
 
   .nav-icon-btn.active {
-    background-color: #c9b5a0;
-    border-color: #634832;
-    color: #38220f;
+    background-color: #634832;
+    border-color: #dbc1ac;
+    color: #ece0d1;
     box-shadow: 0 0 15px rgba(150, 114, 89, 0.3), inset 0 0 15px rgba(150, 114, 89, 0.1);
   }
 
@@ -227,13 +228,32 @@
     font-family: 'Space Grotesk', 'IBM Plex Mono', monospace;
   }
 
+  .content-section {
+    max-width: 56rem;
+    margin: 0 2rem 2rem;
+    border-top: 2px solid rgba(236, 224, 209, 0.25);
+    border-bottom: 2px solid rgba(236, 224, 209, 0.25);
+    border-radius: 1rem;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+  }
+
+  .content-section-primary {
+    background: linear-gradient(135deg, rgba(99, 72, 50, 0.94) 0%, rgba(56, 34, 15, 0.98) 100%);
+    border-color: rgba(150, 114, 89, 0.8);
+  }
+
+  .content-section-secondary {
+    background: linear-gradient(135deg, rgba(150, 114, 89, 0.92) 0%, rgba(99, 72, 50, 0.96) 100%);
+    border-color: rgba(236, 224, 209, 0.4);
+  }
+
   .section-title {
     display: block;
     width: 100%;
     padding-bottom: 0.75rem;
     font-size: 1.875rem;
     font-weight: bold;
-    color: #ece0d1;
+    color: #f8efe6;
     margin-bottom: 3rem;
     font-family: 'Space Grotesk', 'IBM Plex Mono', monospace;
     letter-spacing: -0.01em;
@@ -242,6 +262,10 @@
   }
 
   @media (min-width: 768px) {
+    .content-section {
+      margin: 0 4rem 2.5rem;
+    }
+
     .section-title {
       font-size: 2.25rem;
     }
@@ -249,23 +273,19 @@
 
   /* Section dividers with alternating colors */
   .section-title-experience {
-    color: #ece0d1;
-    border-image: linear-gradient(to right, #000000, #634832) 1;
+    border-image: linear-gradient(to right, #ece0d1, #634832) 1;
   }
 
   .section-title-about {
-    color: #f3e7d8;
-    border-image: linear-gradient(to right, #000000, #967259) 1;
+    border-image: linear-gradient(to right, #ece0d1, #967259) 1;
   }
 
   .section-title-resume {
-    color: #ece0d1;
-    border-image: linear-gradient(to right, #000000, #634832) 1;
+    border-image: linear-gradient(to right, #ece0d1, #634832) 1;
   }
 
   .section-title-contact {
-    color: #f3e7d8;
-    border-image: linear-gradient(to right, #000000, #967259) 1;
+    border-image: linear-gradient(to right, #ece0d1, #967259) 1;
   }
 
   .experience-card {

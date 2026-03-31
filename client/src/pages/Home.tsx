@@ -47,7 +47,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       {/* Left-side Vertical Navigation Bar */}
-      <nav className="fixed left-0 top-0 h-screen w-20 bg-black/80 backdrop-blur-md border-r border-white/5 flex flex-col items-center justify-center gap-8 z-50">
+      <nav className="fixed left-0 top-0 h-screen w-20 bg-[#38220f]/95 backdrop-blur-md border-r border-[#967259]/30 shadow-[4px_0_24px_rgba(0,0,0,0.35)] flex flex-col items-center justify-center gap-8 z-50">
         {/* Navigation Items */}
         <button
           onClick={() => scrollToSection('home')}
@@ -147,7 +147,7 @@ export default function Home() {
         </section>
 
         {/* Experience Section */}
-        <section id="experience" className="py-24 px-8 md:px-16 max-w-4xl">
+        <section id="experience" className="content-section content-section-primary py-24 px-8 md:px-16">
           <h2 className="section-title section-title-experience">Experience</h2>
           
           <div className="space-y-8">
@@ -229,7 +229,7 @@ export default function Home() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-24 px-8 md:px-16 max-w-4xl">
+        <section id="about" className="content-section content-section-secondary py-24 px-8 md:px-16">
           <h2 className="section-title section-title-about">About Me</h2>
           
           <div className="glass-effect p-8 md:p-12 mb-12">
@@ -257,7 +257,7 @@ export default function Home() {
         </section>
 
         {/* Resume Section */}
-        <section id="resume" className="py-24 px-8 md:px-16 max-w-4xl">
+        <section id="resume" className="content-section content-section-primary py-24 px-8 md:px-16">
           <h2 className="section-title section-title-resume">Resume</h2>
           
           <div className="glass-effect p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
@@ -285,7 +285,7 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-24 px-8 md:px-16 max-w-4xl">
+        <section id="contact" className="content-section content-section-secondary py-24 px-8 md:px-16">
           <h2 className="section-title section-title-contact">Get In Touch</h2>
           
           <div className="grid md:grid-cols-2 gap-12">
