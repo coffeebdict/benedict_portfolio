@@ -198,7 +198,7 @@ export default function Home() {
                   <span className="mt-1" style={{ color: '#38220f' }}>▸</span>
                   <span>Mentored junior developers and established coding standards</span>
                 </li>
-              </ul>
+              </ul>x
             </div> */}
 
             {/* Experience Card 3 */}
@@ -224,8 +224,8 @@ export default function Home() {
                   <span>Participated in code reviews and learned best practices</span>
                 </li>
               </ul>
-            </div>
-          </div> */}
+            </div>*/}
+          </div> 
         </section>
 
         {/* About Section */}
