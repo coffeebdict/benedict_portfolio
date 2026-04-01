@@ -155,29 +155,29 @@ export default function Home() {
             <div className="experience-card">
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div>
-                  <h3 className="text-2xl font-bold text-white mb-1">Senior Frontend Developer</h3>
-                  <p className="font-semibold" style={{ color: '#38220f' }}>Tech Innovations Inc.</p>
+                  <h3 className="text-2xl font-bold text-white mb-1">Internship</h3>
+                  <p className="font-semibold" style={{ color: '#38220f' }}>Techflow.AI</p>
                 </div>
-                <p className="text-sm md:text-right mt-2 md:mt-0 text-white">2022 - Present</p>
+                <p className="text-sm md:text-right mt-2 md:mt-0 text-white">February 2026 - Present</p>
               </div>
               <ul className="space-y-2 text-gray-300 text-sm md:text-base">
                 <li className="flex items-start gap-3">
-                  <span className="text-cyan-400 mt-1">▸</span>
-                  <span>Led development of responsive web applications using React and TypeScript</span>
+                  <span className="mt-1" style={{ color: '#38220f' }}>▸</span>
+                  <span>Built multiple automations for clients to make business process faster and easier</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-1" style={{ color: '#38220f' }}>▸</span>
-                  <span>Implemented glassmorphism design patterns and modern UI/UX best practices</span>
+                  <span>Collaborated with team members to deliver high-quality automations</span>
                 </li>
-                <li className="flex items-start gap-3">
+                {/* <li className="flex items-start gap-3">
                   <span className="mt-1" style={{ color: '#38220f' }}>▸</span>
-                  <span>Optimized performance achieving 95+ Lighthouse scores</span>
-                </li>
+                  <span>Earned Smarts</span>
+                </li> */}
               </ul>
             </div>
 
             {/* Experience Card 2 */}
-            <div className="experience-card">
+            {/* <div className="experience-card">
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-1">Frontend Developer</h3>
@@ -199,10 +199,10 @@ export default function Home() {
                   <span>Mentored junior developers and established coding standards</span>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
             {/* Experience Card 3 */}
-            <div className="experience-card">
+            {/* <div className="experience-card">
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-white mb-1">Junior Frontend Developer</h3>
@@ -225,7 +225,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
         </section>
 
         {/* About Section */}
@@ -234,10 +234,10 @@ export default function Home() {
           
           <div className="glass-effect p-8 md:p-12 mb-12">
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
-              I'm a passionate frontend developer with a deep love for creating beautiful, functional web experiences. With over 5 years of experience in the industry, I've worked with startups and established companies to build products that users love.
+              I'm a Computer Engineering Graduate in the University of San Carlos who is passionate about frontend development and aspire to be a skilled developer with a deep love for creating beautiful, functional web experiences. I've still working with startups and established companies to build products that users love.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              When I'm not coding, you'll find me exploring new coffee shops, contributing to open-source projects, or experimenting with the latest web technologies. I believe in the power of clean code, thoughtful design, and continuous learning.
+              When I'm not working, you'll find me playing video games or exploring new coffee shops, contributing to our side projects, or experimenting with the latest web technologies. I believe in our teams power of creating clean code, aesthetic design, and continuous learning.
             </p>
           </div>
 
@@ -264,7 +264,7 @@ export default function Home() {
             <div>
               <h3 className="text-2xl font-bold text-white mb-3">My Resume</h3>
               <p className="text-gray-300 mb-6">
-                Download my full resume to see a comprehensive overview of my experience, education, and technical skills.
+                Download my full resume to see a overview of my experience, education, and technical skills.
               </p>
               <a
                 href="/Benedict_Resume.pdf"
@@ -296,7 +296,7 @@ export default function Home() {
             <div>
               <h3 className="text-2xl font-bold text-white mb-6">Let's Connect</h3>
               <p className="text-gray-300 mb-8 leading-relaxed">
-                I'm always interested in hearing about new projects and opportunities. Feel free to reach out if you'd like to collaborate or just chat about coffee and code!
+                I'm always interested in hearing about new projects and opportunities. Feel free to reach out if you'd like to collaborate or just chat about coffee and life!
               </p>
               
               {/* Social Links */}
@@ -393,7 +393,7 @@ export default function Home() {
 
         {/* Footer */}
         <footer className="py-12 px-8 md:px-16 border-t border-white/5 text-center text-gray-500">
-          <p>© 2024 Benedict Abellana. Built with React, Tailwind CSS, and ☕ Coffee.</p>
+          <p>© 2026 Benedict Abellana. Built with React, Tailwind CSS, and ☕ Coffee.</p>
         </footer>
       </main>
     </div>
