@@ -365,6 +365,16 @@
     }
   }
 
+  .section-title-about {
+    margin-bottom: 1.5rem;
+  }
+
+  @media (max-width: 1024px) {
+    .section-title-about {
+      margin-bottom: 1rem;
+    }
+  }
+
   /* Section dividers with alternating colors */
   .section-title-experience {
     border-image: linear-gradient(to right, #ece0d1, #634832) 1;
@@ -519,26 +529,35 @@
   .about-grid {
     display: grid;
     gap: clamp(1rem, 2vw, 1.5rem);
-    align-items: stretch;
+    align-items: start;
+  }
+
+  /* Desktop: small portrait image on the left, bio card on the right */
+  @media (min-width: 768px) and (min-height: 701px) {
+    .about-grid {
+      grid-template-columns: minmax(180px, 260px) minmax(280px, 1fr);
+    }
   }
 
   @media (min-width: 1280px) and (min-height: 701px) {
     .about-grid {
-      grid-template-columns: minmax(240px, 0.85fr) minmax(320px, 1.35fr);
+      grid-template-columns: minmax(200px, 280px) minmax(320px, 1fr);
+      gap: clamp(1.25rem, 2.5vw, 2rem);
     }
   }
 
   @media (min-width: 1536px) and (min-height: 701px) {
     .about-grid {
-      grid-template-columns: minmax(260px, 0.8fr) minmax(360px, 1.3fr);
+      grid-template-columns: minmax(220px, 300px) minmax(360px, 1fr);
       gap: clamp(1.5rem, 3vw, 2rem);
     }
   }
 
   .about-image {
     width: 100%;
-    height: 100%;
-    min-height: clamp(220px, 32vh, 360px);
+    max-width: 260px;
+    aspect-ratio: 3 / 4;
+    max-height: min(40vh, 320px);
     border-radius: 0.5rem;
     overflow: hidden;
     border: 1px solid rgba(150, 114, 89, 0.4);
@@ -546,7 +565,9 @@
   }
 
   .about-bio {
-    padding: clamp(1rem, 1.75vw, 1.75rem);
+    padding: clamp(1rem, 1.75vw, 1.5rem);
+    max-height: calc(var(--viewport-h) - 180px);
+    overflow-y: auto;
   }
 
   .resume-preview {
@@ -580,16 +601,19 @@
     }
 
     .about-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(140px, 200px) 1fr;
       gap: 1rem;
+      align-items: start;
     }
 
     .about-image {
-      min-height: clamp(180px, 28vh, 260px);
+      max-width: 200px;
+      max-height: min(34vh, 260px);
     }
 
     .about-bio {
       padding: 1rem;
+      max-height: calc(var(--viewport-h) - 160px);
     }
 
     .experience-card-frame {

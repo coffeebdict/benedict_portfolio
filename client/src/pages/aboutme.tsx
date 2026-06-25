@@ -32,12 +32,10 @@ const PROFILE_IMAGE = '/profile.jpg';
  * About section. Third panel in the horizontal track.
  *
  * UX layout:
- *   - Desktop: a balanced two-column composition. The left column is a
- *     rounded portrait photo. The right column is a single glass card
- *     containing the bio and the skills chips. The left image stretches to
- *     match the right card's total height so the columns align cleanly
- *     at top and bottom. On short viewports the layout drops to a single
- *     vertical stack.
+ *   - Desktop: small portrait photo on the left, bio + skills in a single
+ *     glass card on the right. The right card scrolls if the viewport is too
+ *     short so the whole composition fits under the title. On short viewports
+ *     the layout drops to a single vertical stack.
  *   - Mobile: circular avatar above a stacked bio and skills, vertically
  *     scrollable.
  */
@@ -103,11 +101,13 @@ export default function AboutMe({ viewportW, isActive }: AboutMeProps) {
           </div>
         </div>
       ) : (
-        // Desktop: two-column layout where the image matches the right card height.
-        <div className="flex-1 flex flex-col justify-center min-h-0 max-w-6xl mx-auto w-full">
-          <div className="about-grid items-stretch">
-            {/* Left column: portrait image */}
-            <div className="glass-card-dark p-2 h-full">
+        // Desktop: compact two-column layout under the title. The left image is
+        // kept small and portrait-shaped; the right card holds the bio and
+        // skills and scrolls if the viewport is too short.
+        <div className="flex-1 flex flex-col justify-start min-h-0 max-w-5xl mx-auto w-full pt-2">
+          <div className="about-grid items-start">
+            {/* Left column: small portrait image */}
+            <div className="shrink-0 mx-auto md:mx-0">
               <div className="about-image">
                 <img
                   src={PROFILE_IMAGE}
@@ -119,7 +119,7 @@ export default function AboutMe({ viewportW, isActive }: AboutMeProps) {
 
             {/* Right column: bio + skills unified inside one glass card */}
             <div className="glass-card-dark about-bio flex flex-col justify-between h-full">
-              <div className="space-y-5 text-base md:text-lg text-gray-200 leading-relaxed text-center md:text-left">
+              <div className="space-y-4 text-sm md:text-base text-gray-200 leading-relaxed text-center md:text-left">
                 <p>
                   I am Benedict Abellana, a Computer Engineering student at the University of San Carlos
                   who is passionate about frontend development and aspire to be a skilled developer
@@ -133,15 +133,15 @@ export default function AboutMe({ viewportW, isActive }: AboutMeProps) {
                 </p>
               </div>
 
-              <div className="mt-5 pt-5 border-t border-[#967259]/30">
-                <h3 className="text-base md:text-lg font-bold text-white text-center md:text-left mb-3">
+              <div className="mt-4 pt-4 border-t border-[#967259]/30">
+                <h3 className="text-sm md:text-base font-bold text-white text-center md:text-left mb-2">
                   Skills & Technologies
                 </h3>
-                <div className="flex flex-wrap gap-2 md:gap-2.5 justify-center md:justify-start">
+                <div className="flex flex-wrap gap-1.5 md:gap-2 justify-center md:justify-start">
                   {SKILLS.map((skill) => (
                     <span
                       key={skill}
-                      className="inline-block px-2.5 py-1 md:px-3 md:py-1.5 rounded-full text-[10px] md:text-xs font-medium
+                      className="inline-block px-2 py-0.5 md:px-2.5 md:py-1 rounded-full text-[10px] md:text-[11px] font-medium
                                  text-[#ece0d1] border border-[#967259]/40 bg-[#38220f]/45
                                  hover:border-[#967259] hover:bg-[#634832]/40 transition-colors duration-200"
                     >
